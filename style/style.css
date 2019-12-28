@@ -36,6 +36,53 @@ text-decoration: none;
 color: #fff;
 padding:30px;
 }
+/* iliriana */ 
+#secondone{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   float: left;
+   text-align: left;
+ margin-left: 250px;
+ padding-top: 50px;
+ color: white;
+
+ 
+}
+ 
+.second{
+    
+    background-image: url('../img/im1.jpg');
+    background-position: center;
+    width: 100%;
+    height: 300%;
+    
+
+}
+.text
+{
+  font-size: 40px;
+  
+}
+.description
+{
+ float: unset;
+ padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+}
+
+/*.button
+{
+
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 12px;
+
+}*/ 
 .footer
 {   
     width: 100%;
