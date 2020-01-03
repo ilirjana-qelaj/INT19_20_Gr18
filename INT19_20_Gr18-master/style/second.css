@@ -40,6 +40,9 @@ h2{
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #2ecc71;
+
+    
 }
 h2:after{
     content:'';
