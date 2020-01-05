@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Our Website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="style/all.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/other.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            canvas {
+                border:1px solid #d3d3d3;
+                background-color: #f1f1f1;
+            }
+           
+       </style>
+    </head>
+    
+    <body>
+        <!--Header-->
+        <header id="main-header">
+            <div class="container">
+                <div class="row end-sm end-md end-lg">
+                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                     <nav id="navbar">
+                        <img src="img/Capture.jpg" width="254" height="80">
+                         <ul>
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="menu/menu.html">Menu</a></li>
+                             <li><a href="other.html">About Us</a></li>
+                             <li><a href="reservation.html#">Reservation</a></li>
+                             <li><a href="gallery.html">Gallery</a></li>
+                         </ul>
+                     </nav>
+                     </div>
+                     </div>
+                     </div>
+                     </header>
+                
+
+                   
+
+<div class="part1">
+<div class="logo">
+<h2 id="demo"></h2>
+<script>
+    var alinea={type:"restaurant",since:"1990"};
+
+    document.getElementById("demo").innerHTML="This restaurant was opened in " + alinea.since;
+
+</script>
+<img src="/img/restaurant.jpg" width="200" height="150">
+</div>
+
+<div class="RegEx">
+    <h1>Using RegEx to find "Alinea" in a string</h1>
+    <p>Click the button to find "Alinea" </p>
+    <button class="button" onclick="myFunction()">Try it</button>
+    <p id="element"></p>
+
+<script>
+function myFunction() {
+  var str = "Restaurant Alinea";
+  var patt = /Alinea/i;
+  var result = str.match(patt);
+  document.getElementById("element").innerHTML = result;
+}
+</script>
+</div>
+
+
+<div class="dragdrop">
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<h2>-Drag and Drop-</h2>
+<div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br/>
+<img class="drag1" src="/img/Alinea.jpg" draggable="true" ondragstart="drag(event)" width="210" height="160">
+
+</div>
+
+    
+</div>
+
+
+  </body>
+  </html>
